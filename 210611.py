@@ -16,7 +16,7 @@ def solution(n, lost, reserve):
         elif b in _lost:
             _lost.remove(b)
     answer = n - len(lost)
-    print(answer)
+    # print(answer)
     return answer
 
 
