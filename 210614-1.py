@@ -1,12 +1,5 @@
 # 문제 1. 식당의 메뉴가 다음과 같을 때, 손님이 주문한 음식의 결제 총액을 구하시오.
 def test():
-    # menu_dict = {
-    #     "1": "steak",
-    #     "2": "pizza",
-    #     "3": "pasta",
-    #     "4": "hambureger",
-    #     "5": "sandwitch",
-    # }
 
     menu_list = [
         {"pay": 25000, "dish": "steak"},
