@@ -1,5 +1,12 @@
 # 문제 2. 다음과 같은 품목을 쇼핑할 때, 결제 총액을 구하시오.
 def test():
+
+    print("1 - ivory : 23400")
+    print("2 - tommy : 38500")
+    print("3 - arena : 21000")
+    print("4 - metro : 38500")
+    print("5 - coach : 45000")
+
     item_list = [
         {"price": 23400, "brand": "ivory"},
         {"price": 38500, "brand": "tommy"},
@@ -21,8 +28,9 @@ def test():
             item = int(input("Reselect?"))
             payment += item_list[(item - 1)]["price"]
             ordered_list.append(item_list[(item - 1)]["brand"])
-    print("Order List", ordered_list)
-    print("TotalPayment", payment, "won")
+    print("==============================")
+    print("Order List :", "\n", "\n".join(ordered_list))
+    print("TotalPayment :", payment, "won")
 
     return
 
