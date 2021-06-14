@@ -14,26 +14,13 @@ def test():
         item = int(input("Select Item?"))
         if item == 0:
             break
-        elif item == 1:
-            payment += 23400
-            ordered_list.append("ivory")
-        elif item == 2:
-            payment += 38500
-            ordered_list.append("tommy")
-        elif item == 3:
-            payment += 21000
-            ordered_list.append("arena")
-        elif item == 4:
-            payment += 38500
-            ordered_list.append("metro")
-        elif item == 5:
-            payment += 45000
-            ordered_list.append("coach")
+        elif 1 <= item <= 5:
+            payment += item_list[(item - 1)]["price"]
+            ordered_list.append(item_list[(item - 1)]["brand"])
         else:
             item = int(input("Reselect?"))
             payment += item_list[(item - 1)]["price"]
             ordered_list.append(item_list[(item - 1)]["brand"])
-
     print("Order List", ordered_list)
     print("TotalPayment", payment, "won")
 
