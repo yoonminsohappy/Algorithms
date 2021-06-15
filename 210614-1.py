@@ -3,7 +3,7 @@ def test():
 
     menu_list = [
         {"pay": 25000, "dish": "steak"},
-        {"pay": 28000, "dish": "pizza"},
+        {"pay": 28500, "dish": "pizza"},
         {"pay": 14000, "dish": "pasta"},
         {"pay": 8500, "dish": "hamburger"},
         {"pay": 4500, "dish": "sandwitch"},
