@@ -29,7 +29,8 @@ def test():
             payment += item_list[(item - 1)]["price"]
             ordered_list.append(item_list[(item - 1)]["brand"])
     print("==============================")
-    print("Order List :", "\n", "\n".join(ordered_list))
+    print("Order List :")
+    print("\n".join(ordered_list))
     print("TotalPayment :", payment, "won")
 
     return

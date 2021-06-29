@@ -28,7 +28,8 @@ def test():
             price += menu_list[(menu - 1)]["pay"]
             ordered_list.append(menu_list[(menu - 1)]["dish"])
 
-    print("Ordered List :", "\n", "\n".join(ordered_list))
+    print("Ordered List :")
+    print("\n".join(ordered_list))
     print("Total Payment :", price, "won")
 
     return
